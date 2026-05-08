@@ -59,7 +59,7 @@
             // cb_Moneda
             // 
             cb_Moneda.FormattingEnabled = true;
-            cb_Moneda.Items.AddRange(new object[] { "USD - Dólar estadounidense", "MXN - Peso mexicano", "CAD - Dólar canadiense", "EUR - Euro", "JPY - Yen japonés" });
+            cb_Moneda.Items.AddRange(new object[] { "USD - Dolar estadounidense", "MXN - Peso mexicano", "CAD - Dolar canadiense", "EUR - Euro", "JPY - Yen japones" });
             cb_Moneda.Location = new Point(28, 43);
             cb_Moneda.Name = "cb_Moneda";
             cb_Moneda.Size = new Size(225, 28);
@@ -80,6 +80,7 @@
             btn_Calcular.TabIndex = 3;
             btn_Calcular.Text = "Calcular";
             btn_Calcular.UseVisualStyleBackColor = true;
+            btn_Calcular.Click += btn_Calcular_click;
             // 
             // pictureBox1
             // 

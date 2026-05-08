@@ -58,6 +58,7 @@
             btn_Aceptar.TabIndex = 1;
             btn_Aceptar.Text = "Aceptar";
             btn_Aceptar.UseVisualStyleBackColor = true;
+            btn_Aceptar.Click += btn_Aceptar_click;
             // 
             // Form2
             // 
@@ -73,9 +74,8 @@
         }
 
         #endregion
-
-        private CheckedListBox checkedListBox1;
         private Button btn_Cancelar;
         private Button btn_Aceptar;
+        public CheckedListBox checkedListBox1;
     }
 }
