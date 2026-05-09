@@ -34,5 +34,9 @@ namespace Conversor_de_monedas
 
             this.Close();
         }
+        private void btn_Cancelar_click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

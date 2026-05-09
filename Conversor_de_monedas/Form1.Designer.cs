@@ -33,8 +33,8 @@
             cb_Moneda = new ComboBox();
             txt_Monto = new TextBox();
             btn_Calcular = new Button();
-            pictureBox1 = new PictureBox();
             lbl_conversiones = new Label();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -50,7 +50,7 @@
             // lbl_monto
             // 
             lbl_monto.AutoSize = true;
-            lbl_monto.Location = new Point(267, 15);
+            lbl_monto.Location = new Point(270, 15);
             lbl_monto.Name = "lbl_monto";
             lbl_monto.Size = new Size(53, 20);
             lbl_monto.TabIndex = 0;
@@ -60,14 +60,14 @@
             // 
             cb_Moneda.FormattingEnabled = true;
             cb_Moneda.Items.AddRange(new object[] { "USD - Dolar estadounidense", "MXN - Peso mexicano", "CAD - Dolar canadiense", "EUR - Euro", "JPY - Yen japones" });
-            cb_Moneda.Location = new Point(28, 43);
+            cb_Moneda.Location = new Point(12, 43);
             cb_Moneda.Name = "cb_Moneda";
-            cb_Moneda.Size = new Size(225, 28);
+            cb_Moneda.Size = new Size(241, 28);
             cb_Moneda.TabIndex = 1;
             // 
             // txt_Monto
             // 
-            txt_Monto.Location = new Point(267, 44);
+            txt_Monto.Location = new Point(270, 44);
             txt_Monto.Name = "txt_Monto";
             txt_Monto.Size = new Size(125, 27);
             txt_Monto.TabIndex = 2;
@@ -82,29 +82,30 @@
             btn_Calcular.UseVisualStyleBackColor = true;
             btn_Calcular.Click += btn_Calcular_click;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Location = new Point(23, 141);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(427, 366);
-            pictureBox1.TabIndex = 4;
-            pictureBox1.TabStop = false;
-            // 
             // lbl_conversiones
             // 
             lbl_conversiones.AutoSize = true;
-            lbl_conversiones.Location = new Point(55, 128);
+            lbl_conversiones.Location = new Point(56, 128);
             lbl_conversiones.Name = "lbl_conversiones";
             lbl_conversiones.Size = new Size(96, 20);
             lbl_conversiones.TabIndex = 5;
             lbl_conversiones.Text = "Conversiones";
+            lbl_conversiones.Click += lbl_conversiones_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox1.Location = new Point(12, 140);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(438, 244);
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(462, 533);
+            ClientSize = new Size(462, 396);
             Controls.Add(lbl_conversiones);
             Controls.Add(pictureBox1);
             Controls.Add(btn_Calcular);
@@ -126,7 +127,7 @@
         private ComboBox cb_Moneda;
         private TextBox txt_Monto;
         private Button btn_Calcular;
-        private PictureBox pictureBox1;
         private Label lbl_conversiones;
+        private PictureBox pictureBox1;
     }
 }
